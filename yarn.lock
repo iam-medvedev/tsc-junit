@@ -1291,6 +1291,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/jest@npm:^27.4.0":
+  version: 27.4.0
+  resolution: "@types/jest@npm:27.4.0"
+  dependencies:
+    jest-diff: ^27.0.0
+    pretty-format: ^27.0.0
+  checksum: d2350267f954f9a2e4a15e5f02fbf19a77abfb9fd9e57a954de1fb0e9a0d3d5f8d3646ac7d9c42aeb4b4d828d2e70624ec149c85bb50a48634a54eed8429e1f8
+  languageName: node
+  linkType: hard
+
 "@types/minimist@npm:^1.2.0":
   version: 1.2.2
   resolution: "@types/minimist@npm:1.2.2"
@@ -3991,7 +4001,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-diff@npm:^27.4.6":
+"jest-diff@npm:^27.0.0, jest-diff@npm:^27.4.6":
   version: 27.4.6
   resolution: "jest-diff@npm:27.4.6"
   dependencies:
@@ -4107,6 +4117,18 @@ __metadata:
     pretty-format: ^27.4.6
     throat: ^6.0.1
   checksum: d9b05405708161b90c2e9add00ee3c62b154b0f839bc50f034ae8369921956bb16cec428e46ae3b8074a3aeded6cb02f770161d7453f1a183b1abac17dae43f7
+  languageName: node
+  linkType: hard
+
+"jest-junit@npm:^13.0.0":
+  version: 13.0.0
+  resolution: "jest-junit@npm:13.0.0"
+  dependencies:
+    mkdirp: ^1.0.4
+    strip-ansi: ^6.0.1
+    uuid: ^8.3.2
+    xml: ^1.0.1
+  checksum: d3a1bf6e98250837d1a9939cd54f29a7bd4fb835af30e92d0d544300fbe634eb86d2b018c79a7a35b123d933bf3e6c96ba13c0161cdefbf66fc3ab771707572e
   languageName: node
   linkType: hard
 
@@ -5966,7 +5988,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^27.4.6":
+"pretty-format@npm:^27.0.0, pretty-format@npm:^27.4.6":
   version: 27.4.6
   resolution: "pretty-format@npm:27.4.6"
   dependencies:
@@ -7255,6 +7277,7 @@ __metadata:
   resolution: "tsc-junit@workspace:."
   dependencies:
     "@aivenio/tsc-output-parser": ^2.1.1
+    "@types/jest": ^27.4.0
     "@types/node": ^17.0.14
     "@types/prettier": ^2
     "@types/yargs": ^17
@@ -7262,6 +7285,7 @@ __metadata:
     git-cz: ^4.8.0
     husky: ^7.0.4
     jest: ^27.4.7
+    jest-junit: ^13.0.0
     junit-xml: ^1.2.0
     lint-staged: ^12.3.3
     prettier: ^2.5.1
@@ -7458,6 +7482,15 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^8.3.2":
+  version: 8.3.2
+  resolution: "uuid@npm:8.3.2"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 5575a8a75c13120e2f10e6ddc801b2c7ed7d8f3c8ac22c7ed0c7b2ba6383ec0abda88c905085d630e251719e0777045ae3236f04c812184b7c765f63a70e58df
   languageName: node
   linkType: hard
 

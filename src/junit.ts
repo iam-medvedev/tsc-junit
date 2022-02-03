@@ -6,7 +6,7 @@ import { getJunitXml, TestCase, TestSuiteReport } from 'junit-xml';
 /**
  * Get junit-xml from stdin
  */
-function parseStdin(stdin: string): TestSuiteReport {
+export function parseStdin(stdin: string): TestSuiteReport {
   try {
     const parsed: GrammarItem[] = parse(stdin);
 

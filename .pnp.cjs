@@ -36,6 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@aivenio/tsc-output-parser", "npm:2.1.1"],
+            ["@types/jest", "npm:27.4.0"],
             ["@types/node", "npm:17.0.14"],
             ["@types/prettier", "npm:2.4.3"],
             ["@types/yargs", "npm:17.0.8"],
@@ -43,6 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["git-cz", "npm:4.8.0"],
             ["husky", "npm:7.0.4"],
             ["jest", "virtual:278a2198d0b14989978341cf4c7ec7074a57c86fcdfe1bf37387b8d2dc28b95cd0fb014e98832b2c44fb1613006a205435442894bba37289ee7cb628d873a7db#npm:27.4.7"],
+            ["jest-junit", "npm:13.0.0"],
             ["junit-xml", "npm:1.2.0"],
             ["lint-staged", "npm:12.3.3"],
             ["prettier", "npm:2.5.1"],
@@ -1879,6 +1881,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/istanbul-reports", "npm:3.0.1"],
             ["@types/istanbul-lib-report", "npm:3.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/jest", [
+        ["npm:27.4.0", {
+          "packageLocation": "./.yarn/cache/@types-jest-npm-27.4.0-33755263ec-d2350267f9.zip/node_modules/@types/jest/",
+          "packageDependencies": [
+            ["@types/jest", "npm:27.4.0"],
+            ["jest-diff", "npm:27.4.6"],
+            ["pretty-format", "npm:27.4.6"]
           ],
           "linkType": "HARD",
         }]
@@ -5161,6 +5174,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-util", "npm:27.4.2"],
             ["pretty-format", "npm:27.4.6"],
             ["throat", "npm:6.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["jest-junit", [
+        ["npm:13.0.0", {
+          "packageLocation": "./.yarn/cache/jest-junit-npm-13.0.0-ea74336006-d3a1bf6e98.zip/node_modules/jest-junit/",
+          "packageDependencies": [
+            ["jest-junit", "npm:13.0.0"],
+            ["mkdirp", "npm:1.0.4"],
+            ["strip-ansi", "npm:6.0.1"],
+            ["uuid", "npm:8.3.2"],
+            ["xml", "npm:1.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -8589,7 +8615,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/babel-jest", null],
             ["@types/babel__core", null],
             ["@types/esbuild", null],
-            ["@types/jest", null],
+            ["@types/jest", "npm:27.4.0"],
             ["@types/typescript", null],
             ["babel-jest", null],
             ["bs-logger", "npm:0.2.6"],
@@ -8704,6 +8730,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["tsc-junit", "workspace:."],
             ["@aivenio/tsc-output-parser", "npm:2.1.1"],
+            ["@types/jest", "npm:27.4.0"],
             ["@types/node", "npm:17.0.14"],
             ["@types/prettier", "npm:2.4.3"],
             ["@types/yargs", "npm:17.0.8"],
@@ -8711,6 +8738,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["git-cz", "npm:4.8.0"],
             ["husky", "npm:7.0.4"],
             ["jest", "virtual:278a2198d0b14989978341cf4c7ec7074a57c86fcdfe1bf37387b8d2dc28b95cd0fb014e98832b2c44fb1613006a205435442894bba37289ee7cb628d873a7db#npm:27.4.7"],
+            ["jest-junit", "npm:13.0.0"],
             ["junit-xml", "npm:1.2.0"],
             ["lint-staged", "npm:12.3.3"],
             ["prettier", "npm:2.5.1"],
@@ -8916,6 +8944,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/util-deprecate-npm-1.0.2-e3fe1a219c-474acf1146.zip/node_modules/util-deprecate/",
           "packageDependencies": [
             ["util-deprecate", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["uuid", [
+        ["npm:8.3.2", {
+          "packageLocation": "./.yarn/cache/uuid-npm-8.3.2-eca0baba53-5575a8a75c.zip/node_modules/uuid/",
+          "packageDependencies": [
+            ["uuid", "npm:8.3.2"]
           ],
           "linkType": "HARD",
         }]

@@ -12,4 +12,5 @@ __tests__/
 !.yarn/sdks
 !.yarn/versions
 
-tsc-junit.xml
+*.xml
+coverage
