@@ -27,6 +27,8 @@ $ yarn add -D tsc-junit
 }
 ```
 
+Then run:
+
 ```bash
 $ yarn types
 ```
