@@ -6,5 +6,5 @@
     "target": "es2017"
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "dist", "__tests__", "__mocks__", "__fixtures__"]
 }

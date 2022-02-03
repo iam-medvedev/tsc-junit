@@ -9,14 +9,18 @@
   "author": "Ilya Medvedev <ilya@medvedev.im>",
   "license": "WTFPL",
   "scripts": {
-    "dev": "ts-node ./src",
+    "dev": "ts-node ./src/cli",
     "commit": "git-cz"
   },
   "dependencies": {
-    "@aivenio/tsc-output-parser": "^2.1.1"
+    "@aivenio/tsc-output-parser": "^2.1.1",
+    "junit-xml": "^1.2.0",
+    "yargs": "^17.3.1"
   },
   "devDependencies": {
+    "@types/node": "^17.0.14",
     "@types/prettier": "^2",
+    "@types/yargs": "^17",
     "cz-conventional-changelog": "^3.3.0",
     "git-cz": "^4.8.0",
     "husky": "^7.0.4",

@@ -11,3 +11,5 @@ __tests__/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+tsc-junit.xml
