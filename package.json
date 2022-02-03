@@ -8,9 +8,7 @@
   "bugs": "https://github.com/iam-medvedev/tsc-junit/issues",
   "author": "Ilya Medvedev <ilya@medvedev.im>",
   "license": "WTFPL",
-  "bin": {
-    "tsc-junit": "./bin/run"
-  },
+  "bin": "./bin/run",
   "scripts": {
     "build": "tsc",
     "commit": "git-cz",
