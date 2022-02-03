@@ -22,7 +22,5 @@ export async function start() {
     } catch (e) {
       console.error(`x [${e.name}]: ${e.message}`);
     }
-  } else {
-    yargs.showHelp();
   }
 }
