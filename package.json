@@ -9,6 +9,10 @@
   "author": "Ilya Medvedev <ilya@medvedev.im>",
   "license": "WTFPL",
   "bin": "./bin/run",
+  "files": [
+    "./bin",
+    "./dist"
+  ],
   "scripts": {
     "build": "tsc",
     "commit": "git-cz",
