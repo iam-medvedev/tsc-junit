@@ -3,8 +3,10 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "module": "commonjs",
-    "target": "es2017"
+    "target": "es2017",
+    "rootDir": "./src",
+    "outDir": "./dist"
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist", "__tests__", "__mocks__", "__fixtures__"]
+  "exclude": ["node_modules", "dist", "**/__test__/**/*", "**/__fixtures__/**/*"]
 }

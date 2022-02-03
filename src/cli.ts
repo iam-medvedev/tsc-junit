@@ -3,7 +3,7 @@ import { hideBin } from 'yargs/helpers';
 import { createXML } from './junit';
 import { stdinRead } from './utils';
 
-async function start() {
+export async function start() {
   const { output } = await yargs(hideBin(process.argv))
     .locale('en')
     .option('output', {
@@ -26,5 +26,3 @@ async function start() {
     yargs.showHelp();
   }
 }
-
-start();

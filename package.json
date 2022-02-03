@@ -1,18 +1,23 @@
 {
   "name": "tsc-junit",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "main": "./bin/run",
   "description": "JUnit report generator for typescript",
   "repository": "https://github.com/iam-medvedev/tsc-junit.git",
   "homepage": "https://github.com/iam-medvedev/tsc-junit#readme",
   "bugs": "https://github.com/iam-medvedev/tsc-junit/issues",
   "author": "Ilya Medvedev <ilya@medvedev.im>",
   "license": "WTFPL",
+  "bin": {
+    "tsc-junit": "./bin/run"
+  },
   "scripts": {
-    "dev": "ts-node ./src/cli",
+    "build": "tsc",
     "commit": "git-cz",
-    "test": "jest --watch",
-    "test:ci": "jest --ci --coverage --reporters=default --reporters=jest-junit"
+    "dev": "ts-node ./bin/dev",
+    "start": "node ./bin/run",
+    "test:ci": "jest --ci --coverage --reporters=default --reporters=jest-junit",
+    "test": "jest --watch"
   },
   "dependencies": {
     "@aivenio/tsc-output-parser": "^2.1.1",
