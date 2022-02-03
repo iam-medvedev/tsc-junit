@@ -10,8 +10,9 @@
   "license": "WTFPL",
   "bin": "./bin/run",
   "files": [
+    "dist/*",
     "bin/*",
-    "dist/*"
+    "package.json"
   ],
   "scripts": {
     "build": "tsc",
