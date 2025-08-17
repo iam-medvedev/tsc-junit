@@ -1,8 +1,11 @@
 module.exports = {
-  globals: {
-    'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.json',
-    },
-  },
   preset: 'ts-jest',
+  transform: {
+    '.ts': [
+      'ts-jest',
+      {
+        tsconfig: '<rootDir>/tsconfig.json',
+      },
+    ],
+  },
 };

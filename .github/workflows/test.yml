@@ -7,15 +7,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
-      - run: yarn --immutable
+          node-version-file: 'package.json'
+
+      - name: Install dependencies
+        run: yarn --immutable
 
       - name: Check types
         run: yarn types
@@ -24,7 +26,7 @@ jobs:
         run: yarn test:ci
 
       - name: Coverage
-        uses: codecov/codecov-action@v2
+        uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage/clover.xml
